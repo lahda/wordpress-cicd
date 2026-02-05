@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      php: 8.1
+  pre_build:
+    commands:
+      - echo "Préparation du build..."
+  build:
+    commands:
+      - echo "Build en cours..."
+      - echo "Aucune compilation nécessaire pour WordPress"
+  post_build:
+    commands:
+      - echo "Build terminé"
+
+artifacts:
+  files:
+    - '**/*'
