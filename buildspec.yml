@@ -2,18 +2,19 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      php: 8.1
+    commands:
+      - echo "Installation phase - no runtime needed for WordPress"
   pre_build:
     commands:
       - echo "Préparation du build..."
+      - ls -la
   build:
     commands:
       - echo "Build en cours..."
-      - echo "Aucune compilation nécessaire pour WordPress"
+      - echo "WordPress est prêt pour le déploiement"
   post_build:
     commands:
-      - echo "Build terminé"
+      - echo "Build terminé avec succès"
 
 artifacts:
   files:
